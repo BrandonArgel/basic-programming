@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Peso en Diferentes Planetas</title>
+    <style>
+        body
+        {
+            background: url(fondo.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: cornsilk;
+        }
+        strong
+        {
+            color: cyan;
+        }
+        i
+        {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tu peso en otros planetas</h1>
+    <p>En la tierra pesas distinto que en cualquier otro planeta!</p>
+    <script>
+    var usuario = prompt("Cual es tu peso?");
+    var planeta = parseInt(prompt("Elige tu planeta\n1 es Mercurio\n2 es Venus\n3 es Tierra\n4 es Marte\n5 es Jupiter\n6 es Saturno\n7 es Urano\n8 es Neptuno"));
+    var peso = parseInt(usuario);
+    var g_tierra = 9.8;
+
+    var g_mercurio = 3.7;
+    var g_venus = 8.87;
+    var g_marte = 3.711;
+    var g_jupiter = 24.79;
+    var g_saturno = 10.44;
+    var g_neptuno = 11.15;
+    var g_urano = 8.87;
+    var peso_final;
+    var nombre;
+    if (planeta == 1)
+    {
+        peso_final = peso * g_mercurio / g_tierra;
+        nombre = "Mercurio";
+    }
+    else if(planeta == 2)
+    {
+        peso_final = peso * g_venus / g_tierra;
+        nombre = "Venus";
+    }
+    else if(planeta == 3)
+    {
+        peso_final = peso;
+        nombre = "la Tierra";
+    }
+    else if(planeta == 4)
+    {
+        peso_final = peso * g_marte / g_tierra;
+        nombre = "Marte";
+    }
+    else if(planeta == 5)
+    {
+        peso_final = peso * g_jupiter / g_tierra;
+        nombre = "Jupiter";
+    }
+    else if(planeta == 6)
+    {
+        peso_final = peso * g_saturno / g_tierra;
+        nombre = "Saturno";
+    }
+    else if(planeta == 7)
+    {
+        peso_final = peso * g_neptuno / g_tierra;
+        nombre = "Neptuno";
+    }
+    else if(planeta == 8)
+    {
+        peso_final = peso * g_urano / g_tierra;
+        nombre = "Urano";
+    }
+    else
+    {
+      peso_final = 1000000;
+      nombre = "Krypton";
+    }
+    peso_final = parseInt(peso_final);
+    document.write("Tu peso en <strong><i>" + nombre + "</i></strong> es <strong>" + peso_final + "</strong> kilos");
+    </script>
+</body>
+</html>

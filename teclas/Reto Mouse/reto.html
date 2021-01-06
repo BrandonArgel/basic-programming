@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujando con flechas</title>
+    <style>
+        body{
+            background-color: black;
+            color: chartreuse;
+        }
+        #boton_red
+        {
+            border-color: red;
+            position: absolute;
+            left: 650px;
+            background-color: red;
+            color: white;
+        }
+        #boton_blue
+        {
+            border-color: blue;
+            position: absolute;
+            left: 700px;
+            background-color: blue;
+            color: white;
+        }
+        #boton_cyan
+        {
+            border-color: cyan;
+            position: absolute;
+            left: 750px;
+            background-color: cyan;
+            color: black;
+        }
+        #color_wanted
+        {
+            background-color: #ffffff11;
+            color: rgb(233, 83, 213);
+        }
+        #boton_cambiar
+        {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="600" height="600" id="area_dibujo"></canvas>
+
+    <input type="button" id="boton_red" value="Red">
+    <input type="button" id="boton_blue" value="Blue">
+    <input type="button" id="boton_cyan" value="Cyan">
+
+    <p>
+        Escribe un color en inglés
+        <input type="text" id="color_wanted">
+        <input type="button" value="Cambiar" id="boton_change">
+    </p>
+    <script src="reto.js"></script>
+</body>
+</html>

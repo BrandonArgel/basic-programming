@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujando con flechas</title>
+    <style>
+        body
+        {
+            background-color: black;
+            color: greenyellow;
+        }
+        input
+        {
+            background-color: #ffffffee;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="500" height="500" id="area_de_dibujo"></canvas>
+    <p>Mueve las flechas del teclado para dibujar</p>
+    <p>
+        ¿De qué color quieres que sea tu línea?
+        <input type="text" id="color_lineas" />
+        <input type="button" value="Cambiar color" id="botoncito"/>
+
+    </p>
+
+
+
+    <script src="eventos.js"></script>
+</body>
+</html>

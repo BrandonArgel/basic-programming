@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujando con flechas</title>
+    <style>
+        body{
+            background-color: black;
+            color: cyan;
+        }
+        input
+        {
+            background-color: black;
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="1300" height="500" id="area_dibujo"></canvas>
+
+    <p>
+        Selecciona el color con el que quieres dibujar:
+        <input type="color" id="color_dibujo" value="#00FFFF"/><br />
+        Selecciona el grosor de tu línea:
+        <input type="range" min="1" max="10" id="stroke_line" value="3"><br />
+        Presiona el boton para borrar todo el dibujo:
+        <input type="button" value="Clean" id="clean_all" onclick="location.reload()">
+    </p>
+    <script src="Retocolor.js"></script>
+</body>
+</html>
